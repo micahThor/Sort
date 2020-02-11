@@ -25,4 +25,4 @@ Big O space: O(1)
 
 [Code](https://github.com/micahThor/Sort/blob/master/src/main/java/com/micahThor/sort/Sort.java)  
 
-![](https://github.com/micahThor/Sort/blob/master/assets/insertSort.jpg)
+![](https://github.com/micahThor/Sort/blob/master/assets/inserSort.jpg)
