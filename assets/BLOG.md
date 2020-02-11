@@ -21,5 +21,24 @@ SelectionSort(int []arr)
 ```
 Sample Array: [8,4,23,42,16,15]
 ``` 
+![](https://github.com/micahThor/Sort/blob/master/assets/inserSort.jpg)
 
 #### Pass 1
+In pass one 4 is our temp variable.  We compare this to the previous value 8 and determine that a swap is necessary.  We swap the elements and advance our indexing variables.
+
+#### Pass 2
+In pass two 23 is our temp variable.  Since it is larger than its previous element, nothing happens.  We increase our indexing variables.
+
+#### Pass 3
+In pass three 42 is our temp variable.  Since it is larger than its previous element, nothing happens.  We increase our indexing variables.
+
+#### Pass 4
+In pass four 16 is our temp variable.  Since it is smaller than previous element values of 42 and 23, we make appropriate swaps and increase our indexing variables.
+
+#### Pass 5
+In pass five we arrive at the end of our array and our temp value is 15.  Since it is smaller than previous elements of 42, 23, and 16, we make appropriate swaps.  At this time our array is sorted from smallest to larges.
+
+### Result
+```
+Sample Array: [4, 8, 15, 16, 23, 42]
+``` 
