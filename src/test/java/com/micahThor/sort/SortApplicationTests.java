@@ -57,4 +57,17 @@ class SortApplicationTests {
 
 		assertArrayEquals(expected, actual);
 	}
+
+	@Test
+	public void insertionSort_testEmptyArray() {
+
+		int[] actual = new int[]{};
+		Sort.insertionSort(actual);
+
+		int[] expected = new int[]{};
+
+		assertArrayEquals(expected, actual);
+	}
+
+
 }
