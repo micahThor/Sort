@@ -15,7 +15,8 @@ Then we keep a second integer value ("j") that lags the for loop indexing variab
 While the lagging index in the array is less than or equal to 0 and the temp variable is less than the lagging value,  
 swap the value of the adjacent values and decrease the lagging index by one.
 
-Big O time: O(n^2) 
+Big O time: O(n^2)  
+
 Big O space: O(1) 
 
 ## Solution
