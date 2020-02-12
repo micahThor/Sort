@@ -38,7 +38,15 @@ Merge sort involves halving an array into two seperate arrays until each element
 Implement merge sort in Java and provide unit tests to prove quality.  Write a blog that verifies the insertion sort algorithm.
 
 ## Approach & Efficiency
+Merge sort halves the input array into array segments until each array segment contains one element.  Then the elements are recaptured in the array in order.
+
+Big O time: O(n log(n))  
+
+Big O space: O(n) 
+
 
 [Blog](https://github.com/micahThor/Sort/blob/master/assets/BLOG.md)
+
+[Code](https://github.com/micahThor/Sort/blob/master/src/main/java/com/micahThor/sort/Sort.java)  
 
 ![](https://github.com/micahThor/Sort/blob/master/assets/mergeSort.jpg)
