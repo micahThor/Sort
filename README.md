@@ -26,3 +26,19 @@ Big O space: O(1)
 [Code](https://github.com/micahThor/Sort/blob/master/src/main/java/com/micahThor/sort/Sort.java)  
 
 ![](https://github.com/micahThor/Sort/blob/master/assets/inserSort.jpg)
+
+---
+
+# Challenge 27 - Merge Sort (11 FEB 2020)
+<!-- Short summary or background information -->
+Merge sort involves halving an array into two seperate arrays until each element is contained within it's own array. Then the arrays are integrated in a sorted fashion.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Implement merge sort in Java and provide unit tests to prove quality.  Write a blog that verifies the insertion sort algorithm.
+
+## Approach & Efficiency
+
+[Blog](https://github.com/micahThor/Sort/blob/master/assets/BLOG.md)
+
+![](https://github.com/micahThor/Sort/blob/master/assets/mergeSort.jpg)
