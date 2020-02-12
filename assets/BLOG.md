@@ -46,11 +46,10 @@ Sample Array: [4, 8, 15, 16, 23, 42]
 ---
 
 # Merge Sort - Challenge #27  11 FEB 2020
-
+Merge sort involves halving an array into two seperate arrays until each element is contained within it's own array.  Then the arrays are integrated in a sorted fashion.
 
 
 ### Pseudocode
-
 ```
 ALGORITHM Mergesort(arr)
     DECLARE n <-- arr.length
