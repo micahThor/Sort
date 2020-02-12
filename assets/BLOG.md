@@ -95,9 +95,54 @@ Sample Array: [8,4,23,42,16,15]
 ![](https://github.com/micahThor/Sort/blob/master/assets/mergeSort.jpg)
 
 #### Pass 1
+n=5, mid=1
+Since the array length is greater than one, the array is split in half.  Since the array is of an even length, three elements compose the left and right array.
 
+#### Pass 2
+n=3, mid=1
+Since the array length is greater than one, the array is split in half again.
 
+#### Pass 3
+n=2, mid=1
+Since the array length is greater than one, the array is split in half again.
 
+#### Pass 4
+n=1, mid=1
+Since the array length is not greather than one, the element is ready to be integrated in sorted order.
+
+#### Pass 5
+n=1, mid=1
+Since the array length is not greather than one, the element is ready to be integrated in sorted order.
+
+#### Pass 6
+n=1, mid=1
+Since the array length is not greather than one, the element is ready to be integrated in sorted order.
+
+#### Pass 7
+The array is composed of the three elements in sorted order.
+
+#### Pass 8
+n=3, mid=1
+Since the array length is greater than one, the array is split in half again.
+
+#### Pass 9
+n=2, mid=1
+Since the array length is greater than one, the array is split in half again.
+
+#### Pass 10
+n=1, mid=1
+Since the array length is not greather than one, the element is ready to be integrated in sorted order.
+
+#### Pass 11
+n=1, mid=1
+Since the array length is not greather than one, the element is ready to be integrated in sorted order.
+
+#### Pass 12
+n=1, mid=1
+Since the array length is not greather than one, the element is ready to be integrated in sorted order.
+
+#### Pass 13
+The array is composed of the three elements in sorted order.
 
 ### Result
 ```
