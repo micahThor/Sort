@@ -66,7 +66,36 @@ public class Sort {
             i++;
             k++;
         }
+    }
 
+    public static void quickSort(int[] array, int left, int right) {
 
+        if (left < right) {
+            int position = Sort.partition(array, left, right);
+            Sort.quickSort(array, left, position - 1);
+            Sort.quickSort(array, position + 1, right);
+        }
+    }
+
+    public static int partition(int[] array, int left, int right) {
+
+        int pivot = array[right];
+        int low = left - 1;
+
+        for (int j = left; j < right; j++) {
+            if (array[j] <= pivot) {
+                low++;
+                Sort.swap(array, j, low);
+            }
+        }
+        Sort.swap(array, right, low + 1);
+        return low + 1;
+    }
+
+    public static void swap(int[] array, int i, int low) {
+        int temp;
+        temp = array[i];
+        array[i] = array[low];
+        array[low] = temp;
     }
 }
