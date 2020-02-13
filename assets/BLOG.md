@@ -147,3 +147,55 @@ The array is composed of the three elements in sorted order.
 ```
 Sample Array: [4, 8, 15, 16, 23, 42]
 ``` 
+
+---
+
+# Quick Sort - Challenge #28  12 FEB 2020
+Quick sort makes use of a pivot element to determine if a swap needs to be made.  Like all sorting algorithms, quick sort has to visit each value to determine equality.  This gives the sorting algorithm a time complexity of O(n^2) at worst and O(n log(n)) in the best cases.  This particular quick sort sets the final element in the array as the pivot element.  Then the second pointer traverses from the beginining to the end of the array to determine if a swap needs to occur.  
+
+
+### Pseudocode
+```
+ALGORITHM QuickSort(arr, left, right)
+    if left < right
+        // Partition the array by setting the position of the pivot value 
+        DEFINE position <-- Partition(arr, left, right)
+        // Sort the left
+        QuickSort(arr, left, position - 1)
+        // Sort the right
+        QuickSort(arr, position + 1, right)
+
+ALGORITHM Partition(arr, left, right)
+    // set a pivot value as a point of reference
+    DEFINE pivot <-- arr[right]
+    // create a variable to track the largest index of numbers lower than the defined pivot
+    DEFINE low <-- left - 1
+    for i <- left to right do
+        if arr[i] <= pivot
+            low++
+            Swap(arr, i, low)
+
+     // place the value of the pivot location in the middle.
+     // all numbers smaller than the pivot are on the left, larger on the right. 
+     Swap(arr, right, low + 1)
+    // return the pivot index point
+     return low + 1
+
+ALGORITHM Swap(arr, i, low)
+    DEFINE temp;
+    temp <-- arr[i]
+    arr[i] <-- arr[low]
+    arr[low] <-- temp
+       
+```
+
+### Trace
+```
+Sample Array: [8,4,23,42,16,15]
+``` 
+![](https://github.com/micahThor/Sort/blob/master/assets/quickSort.jpg)
+
+### Result
+```
+Sample Array: [4, 8, 15, 16, 23, 42]
+``` 
