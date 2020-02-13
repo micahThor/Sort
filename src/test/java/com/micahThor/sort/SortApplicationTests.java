@@ -139,4 +139,62 @@ class SortApplicationTests {
 
 	}
 
+	/*
+			Quick SORT
+	 */
+	@Test
+	public void quickSort_testHappyPath() {
+
+		int[] actual = new int[]{8, 4, 23, 42, 16, 15};
+		Sort.mergeSort(actual);
+
+		int[] expected = new int[]{4, 8, 15, 16, 23, 42};
+
+		assertArrayEquals(expected, actual);
+	}
+
+	@Test
+	public void quickSort_testReverse() {
+
+		int[] actual = new int[]{20, 18, 12, 8, 5, -2};
+		Sort.quickSort(actual, 0, actual.length-1);
+
+		int[] expected = new int[]{-2, 5, 8, 12, 18, 20};
+
+		assertArrayEquals(expected, actual);
+	}
+
+	@Test
+	public void quickSort_testFewUniques() {
+
+		int[] actual = new int[]{5, 12, 7, 5, 5, 7};
+		Sort.quickSort(actual, 0, actual.length-1);
+
+		int[] expected = new int[]{5, 5, 5, 7, 7, 12};
+
+		assertArrayEquals(expected, actual);
+	}
+
+	@Test
+	public void quickSort_testNearlySorted() {
+
+		int[] actual = new int[]{2, 3, 5, 7, 13, 11};
+		Sort.quickSort(actual, 0, actual.length-1);
+
+		int[] expected = new int[]{2, 3, 5, 7, 11, 13};
+
+		assertArrayEquals(expected, actual);
+	}
+
+	@Test
+	public void quickSort_testEmptyArray() {
+
+		int[] actual = new int[]{};
+		Sort.quickSort(actual, 0, actual.length-1);
+
+		int[] expected = new int[]{};
+
+		assertArrayEquals(expected, actual);
+	}
+
 }
