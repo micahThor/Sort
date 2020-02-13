@@ -1,3 +1,8 @@
+# SORTING CODE CHALLENGES
+[View my Blog](https://github.com/micahThor/Sort/blob/master/assets/BLOG.md) 
+
+[View the Code](https://github.com/micahThor/Sort/blob/master/src/main/java/com/micahThor/sort/Sort.java)  
+
 # Challenge 26 - Insertion Sort (10 FEB 2020)
 <!-- Short summary or background information -->
 Insertion sort involves iterating over a collection and manipulating element's indexes based off their adjacent equality.
@@ -21,9 +26,6 @@ Big O space: O(1)
 
 ## Solution
 <!-- Embedded whiteboard image -->
-[Blog](https://github.com/micahThor/Sort/blob/master/assets/BLOG.md) 
-
-[Code](https://github.com/micahThor/Sort/blob/master/src/main/java/com/micahThor/sort/Sort.java)  
 
 ![](https://github.com/micahThor/Sort/blob/master/assets/inserSort.jpg)
 
@@ -44,9 +46,23 @@ Big O time: O(n log(n))
 
 Big O space: O(n) 
 
-
-[Blog](https://github.com/micahThor/Sort/blob/master/assets/BLOG.md)
-
-[Code](https://github.com/micahThor/Sort/blob/master/src/main/java/com/micahThor/sort/Sort.java)  
-
 ![](https://github.com/micahThor/Sort/blob/master/assets/mergeSort.jpg)
+
+---
+
+# Challenge 28 - Quick Sort (12 FEB 2020)
+<!-- Short summary or background information -->
+Quick sort is a recursive algorithm that uses a pivot to determine equality within elements in an array.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Implement quick sort in Java and provide unit tests to prove quality.  Write a blog that verifies the quick sort algorithm.
+
+## Approach & Efficiency
+Quick sort makes use of a pivot element to determine if swaps need to occur.  A secondary pointer traverses the array from start to end, checking for equality against the pivot element.  The pivot element is always the last element in the array.
+
+Big O time: O(n^2) at worst and O(n log(n)) at best
+
+Big O space: O(n) 
+
+![](https://github.com/micahThor/Sort/blob/master/assets/quickSort.jpg)
